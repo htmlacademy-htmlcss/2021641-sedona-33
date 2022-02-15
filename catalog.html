@@ -45,7 +45,6 @@
 
           <main class="main-inner main-container">
             <div class="page-container">
-              <div class="catalog-filter-background">
                 <section class="inner-header">
                   <h1 class="inner-header-title">Гостиницы Седоны</h1>
                   <ul class="breadcrumbs">
@@ -58,12 +57,11 @@
                   </ul>
                 </section>
 
-              <section class="catalog-products">
-                <div class="catalog-filter">
+                <section class="catalog-filter">
                 <h2 class="visually-hidden" hidden>Список фильтров</h2>
-                <form class="catalog-filter-button" action="https://echo.htmlacademy.ru/" method="get">
+                <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
-                  <section class="infrastructure">
+                  <div class="infrastructure">
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
@@ -90,9 +88,9 @@
                   </li>
                   </ul>
                   </fieldset>
-                </section>
+                </div>
 
-                <section class="type-of-housing">
+                <div class="type-of-housing">
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Тип жилья:</legend>
                     <ul class="catalog-filter-list">
@@ -119,13 +117,14 @@
                       </li>
                     </ul>
                   </fieldset>
-                </section>
-                <section class="filter-buttons">
+                </div>
+                <div class="filter-buttons">
                   <button class="button-apply" type="submit">Применить</button>
                   <button class="button-reset" type="submit">Сбросить</button>
-                </section>
+                </div>
                   </form>
-              </div>
+                </section>
+              
                   <div class="sort-method">
                     <p class="sort-method-title">Найдено гостиниц: 38</p>
                   
@@ -134,6 +133,7 @@
                     <option value="expensive">Сначала дорогие</option>
                     <option value="popular">Сначала популярные</option>
                   </select>
+                <div class="sorting-container">
                   <ul class="viewing-options">
                     <li class="Show cards">
                       <a href="#" class="button button-light">
@@ -151,6 +151,7 @@
                       </a>
                     </li>
                   </ul>
+                </div>
                   </div>
                 <div class="catalog-hotels">
                   <ul class="hotel-list">
@@ -226,53 +227,52 @@
                       </div>
                   </ul>
                 </div>
-                  <div class="block-pagination">
-                  <ul class="pagination">
-                    <li class="pagination-item">
-                      <a class="pagination-link pagination-current">1</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">3</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">4</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">
-                        <span class="visually-hidden">Следующие страницы</span>
-                      </a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">10</a>
-                    </li>
-                  </ul>
+                <div class="block-pagination">
+                  <section class="pagination-module">
+                    <ul class="pagination">
+                      <li class="pagination-item">
+                        <a class="pagination-link pagination-current">1</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">2</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">3</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">4</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">
+                          <span class="visually-hidden">Следующие страницы</span>
+                        </a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">10</a>
+                      </li>
+                    </ul>
+                  </section>
                   <div class="hotels-per-page">
                     <p class="hotels-page">Гостиниц на странице</p>
-                  </div>
+                  
                   <select class="select-control" aria-label="Сортировка">
                     <option value="4">4</option>
                     <option value="8">8</option>
                     <option value="12">12</option>
                   </select>
                   </div>
+                </div>
 
-              </section>
-              <section class="mailing-list">
-                <h4 class="mailing-list-title">Подпишитесь на рассылку</h4>
-                <p class="mailing-list-description">Только полезная информация и никакого спама,
-                  честное бойскаутское!</p>
-                  <form class="mailing-list-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <input class="field" placeholder="Ваш e-mail" type="email">
-                    <button class="mailing-list-button" type="submit">
-                      <span class="visually-hidden">Подписаться</span>
-                    </button>
-                  </form>
-              
-              </section>
-                 </div>
+                <section class="mailing-list-catalog">
+                  <h4 class="mailing-list-catalog-title">Подпишитесь на рассылку</h4>
+                  <p class="mailing-list-catalog-description">Только полезная информация и никакого спама,
+                    честное бойскаутское!</p>
+                    <form class="mailing-list-catalog-form" action="https://echo.htmlacademy.ru/" method="post">
+                      <input class="field-catalog" placeholder="Ваш e-mail" type="email">
+                      <button class="mailing-list-catalog-button" type="submit">Подписаться</button>
+                    </form>
+                </section>
+            </div>  
           </main>
           
           <footer class="page-footer">
@@ -305,6 +305,6 @@
                 </a>
               </section>
             </div>
-
+          </footer>
       </body>
     </html>
