@@ -74,7 +74,7 @@
 
     .page-header {
         display: flex;
-        width: 1060px;
+        width: 1200px;
         height: 70px;
         color: #000000;
         background-color: #ffffff;
@@ -86,24 +86,22 @@
 
     .navigation {
         display: flex;
-        width: 1200px;
+        width: 892px;
         
     }
 
     .navigation-list {
         display: flex;
         flex-wrap: wrap;
-        width: 500px;
+        margin-right: 282px;
         margin: 0;
         padding: 0;
         list-style-type: none;
     }
 
-    .navigation-list .navigation-user {
-        display: block;
-        width: 264px;
-        height: 66px;
-        margin-right: 70px;
+    .navigation-user {
+        display: flex;
+        margin-right: 0;
     }
 
     .navigation-link {
@@ -121,6 +119,12 @@
     }
 
     .navigation-link-want {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 14px;
+        width: 160px;
+        height: 37px;
         font-family: "PT Sans", sans-serif;
         font-size: 16px;
         line-height: 22px;
@@ -162,6 +166,11 @@
         margin: 0 auto;
     }
 
+    .main-logo {
+        width: 1200px;
+        height: 485px;
+    }
+
     .logo {
         display: block;
         margin: 0 auto;
@@ -185,16 +194,16 @@
     .tagline-container {
         display: flex;
         width: 1200px;
-        margin: 0 auto;
+        height: 282px;
+        margin-top: 82px;
         padding: 0 auto;
+        background-color: #ffffff;
     }
 
     .tagline {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0 auto;
+        margin: auto;
+        padding: auto;
         text-align: center;
-        margin-bottom: 80px;
     }
 
     .tagline-list {
@@ -204,7 +213,8 @@
         line-height: 36px;
         font-weight: 700;
         color: #000000;
-        background-color: #ffffff;
+        text-transform: uppercase;
+        flex-wrap: nowrap;
     }
 
     .tagline-reason {
@@ -245,6 +255,7 @@
         display: flex;
         flex-direction: column;
         width: 400px;
+        height: 384px;
         background-color: #83B3D3;
     }
 
@@ -272,6 +283,7 @@
 
     .devils-bridge {
         width: 400px;
+        height: 384px;
         background-color: #83B3D3;
     }
 
@@ -292,14 +304,6 @@
         text-transform: uppercase;
     }
 
-    .catalog-filter-title {
-        font-family: "PT Sans", sans-serif;
-        font-size: 20px;
-        line-height: 26px;
-        color: #ffffff;
-        background-color: #000000;
-    }
-
     .catalog-filter-input {
         font-family: "PT Sans", sans-serif;
         font-size: 18px;
@@ -310,6 +314,8 @@
     }
 
     .button-apply {
+        width: 160px;
+        height: 48px;
         font-family: "PT Sans", sans-serif;
         font-size: 16px;
         line-height: 21px;
@@ -320,6 +326,12 @@
     }
 
     .button-reset {
+        width: 160px;
+        height: 23px;
+        margin-top: 20px;
+        padding: 0;
+        border: 0;
+        background: transparent;
         font-family: "PT Sans", sans-serif;
         font-size: 18px;
         line-height: 23px;
@@ -419,6 +431,7 @@
         display: flex;
         margin: 46px 200px 93px 200px;
         width: 800px;
+        
     }
 
     .field {
@@ -428,7 +441,6 @@
 
     .mailing-list-button {
         width: 200px;
-        height: 61px;
         font-family: "PT Sans", sans-serif;
         font-size: 20px;
         line-height:26px;
@@ -474,6 +486,12 @@
 
     /* Страница каталога */
 
+    .background-block {
+        width: 1200px;
+        height: 408px;
+        margin: 0 auto;
+    }
+
     .inner-header-title {
         font-size: 60px;
         line-height: 78px;
@@ -497,6 +515,24 @@
         color: #ffffff;
         background-color: #000000;
         text-decoration: none;
+        background: transparent;
+    }
+
+    .catalog-filter-title {
+        font-family: "PT Sans", sans-serif;
+        font-size: 20px;
+        line-height: 26px;
+        color: #ffffff;
+        background-color: #000000;
+        background: transparent;
+    }
+
+    .catalog-filter-item {
+        color: #ffffff;
+    }
+
+    .control-input {
+        background: transparent;
     }
 
     .filter-form{
@@ -504,6 +540,13 @@
         width: 1057px;
         height: 151px;
         margin-top: 45px;
+    }
+
+    .catalog-filter-group {
+        display: flex;
+        width: 145px;
+        margin: auto;
+        white-space: nowrap;
     }
 
     .catalog-filter-item {
@@ -517,12 +560,12 @@
     }
 
     .type-of-housing {
-        display: flex;
-        width: 145px;
         margin-left: 67px;
     }
 
     .filter-buttons {
+        display: flex;
+        flex-direction: column;
         width: 160px;
         margin-top: 34px;
         margin-left: 450px;
@@ -535,7 +578,7 @@
         display: flex;
         width: 1057px;
         height: 48px;
-        margin: 130px 72px 53px 71px;
+        margin: 44px 72px 53px 71px;
     }
 
     .sort-method-title {
@@ -571,27 +614,40 @@
 
     /* Каталог */
 
-    .catalog-hotels {
-        display: flex;
-        margin: 53px 72px 30px 72px;
-    }
-
-    .directory-one {
-        display: flex;
-        width: 1056px;
-        list-style-type: none;
-    }
-
-    .directory-two {
-        display: flex;
-        margin-left: auto;
-        width: 1056px;
+    .hotel-list {
+        display: grid;
+        grid-template-columns: 340px 340px 340px;
+        gap: 10px 18px;
+        margin: 0;
+        margin-bottom: 34px;
         list-style-type: none;
     }
 
     .hostel-card {
-        width: 340px;
+        display: flex;
+        flex-direction: column;
         height: 438px;
+    }
+
+    .hostel-card-image {
+        margin: 20px 20px 16px 20px;
+    }
+
+    .hostel-card-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hostel-card-button-content {
+        display: flex;
+        margin-bottom: 16px;
+        
+    }
+
+    .star-rating-content {
+        display: flex;
         
     }
 
@@ -605,11 +661,35 @@
     }
 
     .hostel-card-title {
+        margin-top: auto;
+        font-family: "PT Sans", sans-serif;
+        font-size: 24px;
+        line-height: 31px;
         font-weight: 700;
         color: #000000;
     }
 
+    .hostel-card-price-content {
+        display: flex;
+        height: 23px;
+        margin-bottom: 16px;
+    }
+
     .hostel-card-type {
+        width: 133px;
+        margin-top: auto;
+        margin-right: 25px;
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .hostel-card-price {
+        width: 143px;
+        margin-top: auto;
+        font-family: "PT Sans", sans-serif;
         font-size: 18px;
         line-height: 23px;
         font-weight: 400;
@@ -617,12 +697,22 @@
     }
 
     .hostel-card-rating {
+        width: 160px;
+        margin-left: auto;
+        text-align: center;
         font-size: 16px;
         line-height: 21px;
         color: #333333;
+        background-color: #F2F2F2;
     }
 
     .hostel-card-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 133px;
+        height: 37px;
+        margin-right: 26px;
         font-family: "PT Sans", sans-serif;
         font-size: 16px;
         line-height: 21px;
@@ -631,9 +721,14 @@
         background-color: #756257;
         text-decoration: none;
         text-transform: uppercase;
+        text-align: center;
     }
 
     .hostel-card-to-favorites-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 141px;
         font-family: "PT Sans", sans-serif;
         font-size: 16px;
         line-height: 21px;
@@ -642,9 +737,14 @@
         background-color: #83B3D3;
         text-decoration: none;
         text-transform: uppercase;
+        text-align: center;
     }
 
     .hostel-card-in-favorites-button-green {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 141px;
         font-family: "PT Sans", sans-serif;
         font-size: 16px;
         line-height: 21px;
@@ -655,10 +755,6 @@
         text-transform: uppercase;
     }
 
-    .block-pagination {
-        display: flex;
-        width: 1056px;
-    }
     
     .load-more {
         text-align: center;
@@ -678,16 +774,31 @@
         margin: 64px 290px 60px 290px;
     }
 
+    .block-pagination {
+        display: flex;
+        width: 1056px;
+        height: 55px;
+        margin-right: 72px;
+        margin-left: 72px;
+    }
+    
+
     .pagination {
         display: flex;
         text-align: center;
         list-style-type: none;
         margin-right: 299px;
+        margin-top: auto;
     }
 
     .pagination-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8px;
         width: 55px;
         height: 55px;
+        background-color: #83B3D3;
         
     }
 
@@ -697,14 +808,12 @@
         line-height:26px;
         font-weight: 700;
         color: #ffffff;
-        background-color: #83B3D3;
         text-decoration: none;
         text-transform: uppercase;
     }
 
     .pagination-current {
         color: #000000;
-        background-color: #ffffff;
     }
 
     .hotels-per-page {
@@ -712,10 +821,16 @@
         width: 386px;
         height: 48px;
         margin-top: 3px;
-        margin-right: 4px;
+        margin-bottom: 4px;
     }
 
     .hotels-page {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        height: 23px;
+        margin-top: 16px;
+        margin-bottom: 16px;
         font-family: "PT Sans", sans-serif;
         font-size: 18px;
         line-height:23px;
@@ -723,12 +838,17 @@
         color: #333333;
     }
 
+    .select-control-bottom {
+        width: 160px;
+        margin-left: 46px;
+    }
+
     /* рассылка каталога */
 
     .mailing-list-catalog {
         display: flex;
         flex-direction: column;
-        margin: 73px 200px 260px 200px;
+        margin: 73px 200px 140px 200px;
         width: 800px;
         height: 241px;
         text-align: center;
@@ -760,7 +880,6 @@
 
     .field-catalog {
         width: 600px;
-        height: 60px;
     }
 
     .mailing-list-catalog-button {
