@@ -705,6 +705,10 @@ body {
     border-radius: 2px;
 }
 
+.footer-social-link:focus svg {
+    fill: #68a2ca;
+}
+
 .footer-icon:active,
 .footer-social-link:active {
     fill: #83b3d34d;
@@ -763,12 +767,13 @@ body {
     margin: 25px 49px;
 }
 
-.button-html {
+.html {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 160px;
     height: 68px;
+    cursor: pointer;
 }
 
 .logo-html {
@@ -780,14 +785,18 @@ body {
 }
 
 .logo-html:focus,
-.button-html:focus {
+.html:focus {
     fill: #756257;
     outline: 3px solid #83b3d3;
     border-radius: 10px;
 }
 
+.html:focus svg {
+    fill: #756257;
+}
+
 .logo-html:active,
-.button-html:active {
+.html:active {
     fill: #7562574d;
     outline: none;
 }
@@ -807,9 +816,9 @@ body {
 
 /* включение модального окна */
 
-.modal-container-close {
+/* .modal-container-close {
     display: none;
-}
+} */
 
 .modal {
     position: relative;
@@ -1300,10 +1309,13 @@ body {
     list-style-type: none;
 }
 
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
 .control {
     position: relative;
     display: block;
-    margin-bottom: 12px;
     padding-left: 39px;
     cursor: pointer;
 }
@@ -1408,6 +1420,10 @@ body {
     border-radius: 4px 0 0 4px;
 }
 
+.range-input::placeholder {
+    padding-left: 20px;
+}
+
 .range-max {
     margin: 0;
     display: flex;
@@ -1427,18 +1443,20 @@ body {
     border-radius: 0 4px 4px 0;
 }
 
-.range-input:focus,
+.range-input-min:focus,
 .range-min:focus {
     border: 2px solid #ffffff;
     border-radius: 4px 0 0 4px;
-    outline: none;
+    outline: 2px solid #83b3d3;
+    box-shadow: inset 0px 0px 0px 2px #81B3D2;
 }
 
 .range-max:focus,
-.range-input:focus {
+.range-input-max:focus {
     border: 2px solid #ffffff;
     border-radius: 0 4px 4px 0;
-    outline: none;
+    outline: 2px solid #83b3d3;
+    box-shadow: inset 0px 0px 0px 2px #81B3D2;
 }
 
 .catalog_filter_group_range {
