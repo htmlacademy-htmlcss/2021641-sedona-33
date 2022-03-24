@@ -75,27 +75,18 @@ body {
 /* шапка */
 
 .page-header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
     display: grid;
     grid-template-columns: min-content 1fr;
     width: 1200px;
-    min-height: 70px;
+    height: 65px;
     margin: auto;
     color: #000000;
     background-color: #ffffff;
     justify-content: space-between;
 }
 
-.logo-town {
-    height: 70px;
-}
-
 .header-logo {
-    background-color: #ffffff;
+    position: relative;
     padding: 0 47px 0 70px;
 }
 
@@ -125,7 +116,7 @@ body {
 .navigation-link {
     position: relative;
     display: block;
-    padding: 21px 21px 20px 0;
+    padding: 21px 21px 18px 0;
     margin: 0 auto;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -160,7 +151,7 @@ body {
 .navigation-link-current::before {
     position: absolute;
     right: 0;
-    bottom: 1px;
+    bottom: -1px;
     left: 1px;
     width: 80px;
     height: 2px;
@@ -170,9 +161,9 @@ body {
 
 .navigation-link-current-catalog::before {
     position: absolute;
+    bottom: -1px;
     right: 0;
-    bottom: 1px;
-    left: 1px;
+    left: 0;
     width: 110px;
     height: 2px;
     background-color: #756257;
@@ -183,7 +174,7 @@ body {
     position: relative;
     display: block;
     width: 42px;
-    height: 66px;
+    height: 65px;
     margin-left: auto;
     color: #000000;
     background-color: #ffffff;
@@ -247,12 +238,12 @@ body {
 /* бэкграунд */
 
 .main-container {
-    padding-top: 65px;
     flex-grow: 1;
 }
 
 .main-logo {
-    position: relative;
+    padding: 0;
+    margin: 0;
     color: #000000;
     background-color: #ffffff;
     background-image: url("../images/index-bg.jpg");
@@ -705,6 +696,10 @@ body {
     border-radius: 2px;
 }
 
+.footer-social-link:focus svg {
+    fill: #68a2ca;
+}
+
 .footer-icon:active,
 .footer-social-link:active {
     fill: #83b3d34d;
@@ -763,12 +758,13 @@ body {
     margin: 25px 49px;
 }
 
-.button-html {
+.html {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 160px;
     height: 68px;
+    cursor: pointer;
 }
 
 .logo-html {
@@ -780,14 +776,18 @@ body {
 }
 
 .logo-html:focus,
-.button-html:focus {
+.html:focus {
     fill: #756257;
     outline: 3px solid #83b3d3;
     border-radius: 10px;
 }
 
+.html:focus svg {
+    fill: #756257;
+}
+
 .logo-html:active,
-.button-html:active {
+.html:active {
     fill: #7562574d;
     outline: none;
 }
@@ -1300,10 +1300,13 @@ body {
     list-style-type: none;
 }
 
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
 .control {
     position: relative;
     display: block;
-    margin-bottom: 12px;
     padding-left: 39px;
     cursor: pointer;
 }
@@ -1408,6 +1411,16 @@ body {
     border-radius: 4px 0 0 4px;
 }
 
+.range-input::placeholder {
+    padding-left: 18px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
 .range-max {
     margin: 0;
     display: flex;
@@ -1427,18 +1440,27 @@ body {
     border-radius: 0 4px 4px 0;
 }
 
-.range-input:focus,
+.range-input-min:focus,
 .range-min:focus {
     border: 2px solid #ffffff;
     border-radius: 4px 0 0 4px;
-    outline: none;
+    outline: 2px solid #83b3d3;
+    box-shadow: inset 0px 0px 0px 2px #81b3d2;
 }
 
 .range-max:focus,
-.range-input:focus {
+.range-input-max:focus {
     border: 2px solid #ffffff;
     border-radius: 0 4px 4px 0;
+    outline: 2px solid #83b3d3;
+    box-shadow: inset 0px 0px 0px 2px #81b3d2;
+}
+
+.range-input:active {
+    background-color: #756257;
     outline: none;
+    box-shadow: none;
+    border: 2px solid #ffffff;
 }
 
 .catalog_filter_group_range {
@@ -1487,7 +1509,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     margin: 0;
 }
 
@@ -1641,7 +1664,8 @@ body {
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: right 19px center;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     cursor: pointer;
 }
 
@@ -2119,7 +2143,8 @@ body {
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: right 20px center;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     cursor: pointer;
 }
 
