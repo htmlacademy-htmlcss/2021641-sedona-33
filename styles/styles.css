@@ -816,9 +816,9 @@ body {
 
 /* включение модального окна */
 
-/* .modal-container-close {
+.modal-container-close {
     display: none;
-} */
+}
 
 .modal {
     position: relative;
@@ -1421,7 +1421,13 @@ body {
 }
 
 .range-input::placeholder {
-    padding-left: 20px;
+    padding-left: 18px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
 }
 
 .range-max {
@@ -1448,7 +1454,7 @@ body {
     border: 2px solid #ffffff;
     border-radius: 4px 0 0 4px;
     outline: 2px solid #83b3d3;
-    box-shadow: inset 0px 0px 0px 2px #81B3D2;
+    box-shadow: inset 0px 0px 0px 2px #81b3d2;
 }
 
 .range-max:focus,
@@ -1456,7 +1462,14 @@ body {
     border: 2px solid #ffffff;
     border-radius: 0 4px 4px 0;
     outline: 2px solid #83b3d3;
-    box-shadow: inset 0px 0px 0px 2px #81B3D2;
+    box-shadow: inset 0px 0px 0px 2px #81b3d2;
+}
+
+.range-input:active {
+    background-color: #756257;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #ffffff;
 }
 
 .catalog_filter_group_range {
@@ -1505,7 +1518,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     margin: 0;
 }
 
@@ -1659,7 +1673,8 @@ body {
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: right 19px center;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     cursor: pointer;
 }
 
@@ -2137,7 +2152,8 @@ body {
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: right 20px center;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     cursor: pointer;
 }
 
